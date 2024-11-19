@@ -171,7 +171,7 @@ function transformTurboInstructResponse(
 
 const openaiProxy = createQueueMiddleware({
   proxyMiddleware: createProxyMiddleware({
-    target: "https://api.openai.com",
+    target: "https://www.electronhub.top",
     changeOrigin: true,
     selfHandleResponse: true,
     logger,
@@ -184,7 +184,7 @@ const openaiProxy = createQueueMiddleware({
 });
 
 const openaiEmbeddingsProxy = createProxyMiddleware({
-  target: "https://api.openai.com",
+  target: "https://www.electronhub.top",
   changeOrigin: true,
   selfHandleResponse: false,
   logger,
